@@ -1,0 +1,19 @@
+{
+  "name": "drafi2006",
+  "version": "1.0.0",
+  "description": "Dudekula Mahammad Rafi's GitHub Profile README & Animated Jet Heatmap",
+  "author": "Dudekula Mahammad Rafi <mahammaadrafi786@gmail.com> (https://github.com/DRafi2006)",
+  "homepage": "https://github.com/DRafi2006/DRafi2006",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DRafi2006/DRafi2006.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate": "node generate.mjs",
+    "convert": "python3 convert_portrait.py"
+  }
+}

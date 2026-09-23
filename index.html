@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dudekula Mahammad Rafi | AI Systems Architect &amp; Open Source Engineer</title>
+  <meta name="description" content="Cyber-terminal developer portfolio, biometric ASCII telemetry, system design blueprints, open source contributions, and Mach-6 autonomous GitHub Jet radar by Dudekula Mahammad Rafi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Interactive Matrix Background Canvas -->
+  <canvas id="matrixCanvas" class="matrix-canvas"></canvas>
+
+  <!-- CRT Scanlines Overlay -->
+  <div class="scanline-overlay" id="scanlineOverlay"></div>
+
+  <!-- Top Navigation Command Bar -->
+  <header class="top-nav">
+    <div class="nav-brand">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span class="status-text">DEVOS v3.2 // AGENTIC CORE: ONLINE</span>
+      </div>
+      <div class="brand-title">rafik@devos: ~ (quantum_core.sh)</div>
+    </div>
+    
+    <div class="nav-telemetry-pill">
+      <span class="clock-display" id="liveClock">00:00:00 UTC</span>
+      <span class="pill-divider">|</span>
+      <span class="ping-display">PING: <strong class="text-green">18ms</strong></span>
+    </div>
+
+    <div class="nav-actions">
+      <button class="nav-btn sfx-toggle" id="sfxToggleBtn" title="Toggle Cyber Sound Effects">
+        <span class="btn-icon" id="sfxIcon">🔊</span>
+        <span class="btn-text" id="sfxText">SFX: ON</span>
+      </button>
+      <button class="nav-btn theme-toggle" id="themeToggleBtn" title="Switch Light/Dark Hologram">
+        <span class="btn-icon" id="themeIcon">☀️</span>
+        <span class="btn-text" id="themeText">Light Mode</span>
+      </button>
+      <button class="nav-btn scanline-toggle" id="scanlineToggleBtn" title="Toggle CRT Scanlines">
+        <span class="btn-icon">⚡</span>
+        <span class="btn-text">CRT: ON</span>
+      </button>
+      <button class="nav-btn export-btn" id="openCustomizerBtn" title="Open Customizer &amp; Studio">
+        <span class="btn-icon">⚙️</span>
+        <span class="btn-text">Studio &amp; ASCII</span>
+      </button>
+      <a href="https://github.com/DRafi2006" target="_blank" rel="noopener" class="nav-btn github-link">
+        <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        <span>DRafi2006</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Hero / Title HUD Banner -->
+    <div class="hero-bar cyber-panel">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          <span>FULL-STACK &amp; DISTRIBUTED AI SYSTEMS ARCHITECT</span>
+        </div>
+        <h1 class="hero-title">Dudekula Mahammad Rafi</h1>
+        <p class="hero-subtitle">Open Source Contributor (Layer5, Meshery, Rocket.Chat, Jitsi) · Computer Science at NIAT · Startup Builder</p>
+      </div>
+      <div class="hero-stats-quick">
+        <div class="quick-stat">
+          <span class="stat-label">SSC CGPA</span>
+          <span class="stat-val highlight-green">10.0</span>
+        </div>
+        <div class="quick-stat">
+          <span class="stat-label">REPOSITORIES</span>
+          <span class="stat-val highlight-cyan">16+ Open Repos</span>
+        </div>
+        <div class="quick-stat">
+          <span class="stat-label">SYSTEM DESIGN</span>
+          <span class="stat-val highlight-amber">RAG &amp; Microservices</span>
+        </div>
+        <div class="quick-stat">
+          <span class="stat-label">STATUS</span>
+          <span class="stat-val text-green">● Shipping 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Terminal Card Display with 3D Tilt Effect -->
+    <section class="card-section" id="terminalCardSection">
+      <div class="section-badge-bar">
+        <div class="badge-tag">
+          <span class="dot-live"></span>
+          <span>BIOMETRIC SCAN HUD &amp; QUANTUM ASCII TELEMETRY</span>
+        </div>
+        <div class="mode-indicator" id="currentModeLabel">Current View: Cyber-Obsidian Mint Matrix</div>
+      </div>
+
+      <!-- 3D Holographic Perspective Container -->
+      <div class="tilt-wrapper" id="tiltWrapper">
+        <div class="terminal-card-wrapper" id="svgContainer">
+          <object id="profileSvgObject" data="dark.svg" type="image/svg+xml" class="profile-svg" aria-label="DevOS Terminal Profile"></object>
+          <div class="card-glare"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mach-6 GitHub Jet Heatmap Section -->
+    <section class="jet-heatmap-section" id="jetHeatmapSection">
+      <div class="jet-header">
+        <div class="jet-title-wrap">
+          <div class="jet-icon">✈️</div>
+          <div>
+            <h2 class="jet-title">Mach-6 Quantum Jet Heatmap (Real Activity Radar)</h2>
+            <p class="jet-desc">Autonomous stealth interceptor patrolling real GitHub contribution telemetry for <strong>@DRafi2006</strong> with kinetic plasma burst targeting.</p>
+          </div>
+        </div>
+        <div class="jet-actions">
+          <button class="nav-btn small-btn" id="refreshHeatmapBtn" title="Regenerate Heatmap with latest contributions">
+            <span>🔄 Re-scan Radar</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="heatmap-card-wrapper" id="heatmapContainer">
+        <object id="heatmapSvgObject" data="dist/github-jet.svg" type="image/svg+xml" class="heatmap-svg" aria-label="GitHub Jet Heatmap"></object>
+      </div>
+    </section>
+
+    <!-- System Design & Distributed Architecture Blueprint Module -->
+    <section class="sysdesign-section">
+      <div class="section-header-wrap">
+        <div class="section-icon-badge">📐</div>
+        <div>
+          <h3 class="section-title">System Design &amp; Distributed Architecture</h3>
+          <p class="section-desc">Interactive architectural topology for high-throughput AI inference, streaming pipelines, and microservice meshes.</p>
+        </div>
+      </div>
+
+      <div class="arch-tabs">
+        <button class="arch-tab-btn active" data-arch="ragPipeline">1. Streaming AI &amp; RAG Architecture</button>
+        <button class="arch-tab-btn" data-arch="meshArch">2. Cloud Native Service Mesh &amp; Gateway</button>
+        <button class="arch-tab-btn" data-arch="webrtcArch">3. WebRTC &amp; High-Concurrency Comms</button>
+      </div>
+
+      <!-- Architecture Topology 1: RAG Pipeline -->
+      <div class="arch-canvas-card active" id="ragPipeline">
+        <div class="topology-grid">
+          <div class="arch-node" data-node="voice">
+            <span class="node-tag">INGESTION</span>
+            <h5>Audio Stream</h5>
+            <p>Multilingual raw PCM voice input</p>
+            <span class="node-metric">&lt; 12ms latency</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node active-node" data-node="whisper">
+            <span class="node-tag">ASR ENGINE</span>
+            <h5>Whisper ASR</h5>
+            <p>Quantized multilingual acoustic model</p>
+            <span class="node-metric">98.4% accuracy</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node" data-node="vector">
+            <span class="node-tag">HYBRID RETRIEVAL</span>
+            <h5>Vector Index (HNSW)</h5>
+            <p>ChromaDB dense + BM25 sparse rerank</p>
+            <span class="node-metric">Top-K cosine</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node" data-node="gemma">
+            <span class="node-tag">INFERENCE</span>
+            <h5>Gemma 7B LLM</h5>
+            <p>Fine-tuned contextual synthesis</p>
+            <span class="node-metric">Tokens: 65 t/s</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node" data-node="tts">
+            <span class="node-tag">DELIVERY</span>
+            <h5>Streaming TTS</h5>
+            <p>Low-latency native voice response</p>
+            <span class="node-metric">Total: &lt; 280ms</span>
+          </div>
+        </div>
+        <div class="arch-node-details" id="nodeInfoBox">
+          <strong class="text-green">Architecture Highlight:</strong> End-to-end streaming speech pipeline with local sub-300ms round-trip latency, designed for rural accessibility with zero cloud dependence.
+        </div>
+      </div>
+
+      <!-- Architecture Topology 2: Service Mesh -->
+      <div class="arch-canvas-card" id="meshArch">
+        <div class="topology-grid">
+          <div class="arch-node">
+            <span class="node-tag">CLIENT</span>
+            <h5>React / Mobile</h5>
+            <p>Next.js 14 SSR &amp; Jetpack Compose</p>
+            <span class="node-metric">HTTP/3 &amp; WSS</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node active-node">
+            <span class="node-tag">INGRESS</span>
+            <h5>Layer5 / Meshery</h5>
+            <p>Envoy service mesh proxy &amp; rate limiter</p>
+            <span class="node-metric">Zero-trust mTLS</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node">
+            <span class="node-tag">BACKEND MESH</span>
+            <h5>Node / Express / Flask</h5>
+            <p>Distributed stateless microservices</p>
+            <span class="node-metric">10k+ req/sec</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node">
+            <span class="node-tag">STORAGE TIER</span>
+            <h5>Postgres &amp; Redis</h5>
+            <p>Write-ahead log + in-memory cache</p>
+            <span class="node-metric">Sub-millisecond</span>
+          </div>
+        </div>
+        <div class="arch-node-details">
+          <strong class="text-cyan">Mesh Highlight:</strong> Inspired by Layer5 and Meshery cloud native management patterns, decoupling ingress routing, circuit breaking, and telemetry from application business logic.
+        </div>
+      </div>
+
+      <!-- Architecture Topology 3: WebRTC Comms -->
+      <div class="arch-canvas-card" id="webrtcArch">
+        <div class="topology-grid">
+          <div class="arch-node">
+            <span class="node-tag">PEER LAYER</span>
+            <h5>Jitsi Clients</h5>
+            <p>Adaptive bitrate WebRTC video &amp; audio</p>
+            <span class="node-metric">VP8 / H.264</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node active-node">
+            <span class="node-tag">SIGNALING</span>
+            <h5>Rocket.Chat Engine</h5>
+            <p>Persistent duplex WebSocket channels</p>
+            <span class="node-metric">&lt; 15ms ping</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node">
+            <span class="node-tag">MEDIA BRIDGE</span>
+            <h5>Videobridge SFU</h5>
+            <p>Selective Forwarding Unit mesh routing</p>
+            <span class="node-metric">Zero transcoding</span>
+          </div>
+          <div class="arch-arrow">➔</div>
+          <div class="arch-node">
+            <span class="node-tag">EDGE NAT</span>
+            <h5>STUN / TURN Edge</h5>
+            <p>ICE candidate negotiation &amp; fallback</p>
+            <span class="node-metric">99.98% reach</span>
+          </div>
+        </div>
+        <div class="arch-node-details">
+          <strong class="text-amber">WebRTC Highlight:</strong> Low-latency peer negotiation pipeline utilizing Selective Forwarding Units (SFU) for scaling multi-party conferences with minimal server CPU load.
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source Ecosystem Showcase -->
+    <section class="opensource-section">
+      <div class="section-header-wrap">
+        <div class="section-icon-badge">🌐</div>
+        <div>
+          <h3 class="section-title">Open Source Contributions &amp; Ecosystem</h3>
+          <p class="section-desc">Active engagement across major cloud native, service mesh, and enterprise communication systems.</p>
+        </div>
+      </div>
+
+      <div class="os-grid">
+        <a href="https://github.com/DRafi2006/layer5" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">☁️</span>
+            <div>
+              <h4 class="os-title">Layer5</h4>
+              <span class="os-category">Cloud Native Infrastructure</span>
+            </div>
+          </div>
+          <p class="os-desc">Expect more from your infrastructure. Multi-mesh service management plane for enterprise Kubernetes clusters.</p>
+          <div class="os-tags">
+            <span class="os-tag">Service Mesh</span>
+            <span class="os-tag">Kubernetes</span>
+            <span class="os-tag">Cloud Native</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/DRafi2006/meshery.io" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">🕸️</span>
+            <div>
+              <h4 class="os-title">Meshery.io</h4>
+              <span class="os-category">Service Mesh Management</span>
+            </div>
+          </div>
+          <p class="os-desc">The open-source cloud native manager. Enabling collaborative design and operations across Istio, Linkerd, and Consul.</p>
+          <div class="os-tags">
+            <span class="os-tag">Meshery</span>
+            <span class="os-tag">Go / React</span>
+            <span class="os-tag">CNCF Landscape</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/DRafi2006/Rocket.Chat1" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">💬</span>
+            <div>
+              <h4 class="os-title">Rocket.Chat</h4>
+              <span class="os-category">Enterprise CommsOS</span>
+            </div>
+          </div>
+          <p class="os-desc">The secure communications platform for mission-critical operations. Real-time WebSockets, microservices, and end-to-end encryption.</p>
+          <div class="os-tags">
+            <span class="os-tag">WebSockets</span>
+            <span class="os-tag">Node.js</span>
+            <span class="os-tag">Microservices</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/DRafi2006/jitsi-meet" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">📹</span>
+            <div>
+              <h4 class="os-title">Jitsi Meet</h4>
+              <span class="os-category">High-Scale WebRTC</span>
+            </div>
+          </div>
+          <p class="os-desc">Secure, simple, and scalable video conferencing infrastructure with low-latency WebRTC SFU streaming.</p>
+          <div class="os-tags">
+            <span class="os-tag">WebRTC</span>
+            <span class="os-tag">Videobridge</span>
+            <span class="os-tag">Real-Time Media</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/DRafi2006/Autryst_AI" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">🤖</span>
+            <div>
+              <h4 class="os-title">Autryst_AI</h4>
+              <span class="os-category">Autonomous Agent System</span>
+            </div>
+          </div>
+          <p class="os-desc">Autonomous AI agent workflows and intelligence pipelines engineered for rapid context retrieval and execution.</p>
+          <div class="os-tags">
+            <span class="os-tag">Agentic AI</span>
+            <span class="os-tag">JavaScript</span>
+            <span class="os-tag">LLM Orchestration</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/DRafi2006/FOUND" target="_blank" rel="noopener" class="os-card">
+          <div class="os-header">
+            <span class="os-icon">🚀</span>
+            <div>
+              <h4 class="os-title">FOUND &amp; CO-FOUND</h4>
+              <span class="os-category">Startup Collaboration Platform</span>
+            </div>
+          </div>
+          <p class="os-desc">High-concurrency full-stack founder resonance network designed for startup builders, real-time matching, and collaborative project rooms.</p>
+          <div class="os-tags">
+            <span class="os-tag">React</span>
+            <span class="os-tag">Node.js</span>
+            <span class="os-tag">MongoDB</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Interactive AI & Tech Stack Constellation Radar -->
+    <section class="tech-radar-section">
+      <h3 class="section-title">⚡ Core Technical Constellation</h3>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-icon">🧠</span>
+            <h4>AI / ML &amp; LLM Systems</h4>
+          </div>
+          <div class="tech-chips">
+            <span class="chip chip-ai">Whisper ASR</span>
+            <span class="chip chip-ai">Gemma LLM</span>
+            <span class="chip chip-ai">RAG Pipelines</span>
+            <span class="chip chip-ai">Vector DBs</span>
+            <span class="chip chip-ai">Dense/Sparse Search</span>
+            <span class="chip chip-ai">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-icon">🌐</span>
+            <h4>Full-Stack &amp; Web Eng</h4>
+          </div>
+          <div class="tech-chips">
+            <span class="chip chip-web">React 18</span>
+            <span class="chip chip-web">Next.js 14</span>
+            <span class="chip chip-web">Node.js</span>
+            <span class="chip chip-web">Express.js</span>
+            <span class="chip chip-web">Python Flask</span>
+            <span class="chip chip-web">RESTful APIs</span>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-icon">💻</span>
+            <h4>Core Languages</h4>
+          </div>
+          <div class="tech-chips">
+            <span class="chip chip-lang">Python</span>
+            <span class="chip chip-lang">JavaScript</span>
+            <span class="chip chip-lang">TypeScript</span>
+            <span class="chip chip-lang">C</span>
+            <span class="chip chip-lang">C++</span>
+            <span class="chip chip-lang">SQL</span>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <span class="tech-icon">🛠️</span>
+            <h4>DevOps &amp; Infrastructure</h4>
+          </div>
+          <div class="tech-chips">
+            <span class="chip chip-dev">Docker</span>
+            <span class="chip chip-dev">Playwright</span>
+            <span class="chip chip-dev">Git / Actions</span>
+            <span class="chip chip-dev">PostgreSQL</span>
+            <span class="chip chip-dev">SQLite</span>
+            <span class="chip chip-dev">Linux / Bash</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive DevOS Sci-Fi Shell / CLI Terminal -->
+    <section class="interactive-cli-section">
+      <div class="cli-terminal-window">
+        <div class="cli-top-bar">
+          <div class="window-controls">
+            <span class="control-dot dot-red"></span>
+            <span class="control-dot dot-yellow"></span>
+            <span class="control-dot dot-green"></span>
+          </div>
+          <div class="cli-window-title">rafik@devos ~ % interactive-quantum-cli</div>
+          <div class="cli-shortcuts">Press [TAB] for autocompletion · Type [help]</div>
+        </div>
+        <div class="cli-body" id="cliOutput">
+          <div class="cli-line intro-line">DevOS Quantum Terminal [Version 3.2.0-live]</div>
+          <div class="cli-line">Type <span class="cmd-highlight">help</span> for system routines, <span class="cmd-highlight">sysdesign</span> for architecture blueprints, or <span class="cmd-highlight">opensource</span> for repos.</div>
+          <div class="cli-line prompt-line">
+            <span class="cli-prompt">rafik@devos:~$</span>
+            <span class="cli-prev-cmd">neofetch --short</span>
+          </div>
+          <div class="cli-response">
+            <span class="text-cyan">OS:</span> DevOS x86_64 Quantum | <span class="text-cyan">Kernel:</span> 6.12.0-agentic<br>
+            <span class="text-cyan">Developer:</span> Dudekula Mahammad Rafi (@DRafi2006)<br>
+            <span class="text-cyan">Uptime:</span> 24/7 High-Performance Shipping Mode<br>
+            <span class="text-cyan">Institute:</span> NIAT (NxtWave Adv Technologies) · SSC CGPA: 10.0<br>
+            <span class="text-cyan">Specialization:</span> Distributed Systems, Agentic AI, Whisper ASR, Cloud Native Mesh
+          </div>
+        </div>
+        <div class="cli-input-bar">
+          <span class="cli-prompt">rafik@devos:~$</span>
+          <input type="text" id="cliInput" class="cli-input" placeholder="Type command (e.g. sysdesign, opensource, skills, ai, bio, clear)..." autofocus autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Markdown Generator Box -->
+    <section class="markdown-export-section">
+      <div class="export-header">
+        <div>
+          <h3 class="export-title">📋 Ready-to-Use GitHub Profile README Code</h3>
+          <p class="export-desc">Copy this block directly into your <code>DRafi2006/DRafi2006</code> profile repository README.</p>
+        </div>
+        <button class="nav-btn primary-btn" id="copyMarkdownBtn">
+          <span id="copyBtnText">Copy Markdown</span>
+        </button>
+      </div>
+      <div class="code-box-wrapper">
+        <pre><code id="markdownSnippet">&lt;a href="https://github.com/DRafi2006/DRafi2006"&gt;
+  &lt;picture&gt;
+    &lt;source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DRafi2006/DRafi2006/main/dark.svg"&gt;
+    &lt;img alt="GitHub Profile README" src="https://raw.githubusercontent.com/DRafi2006/DRafi2006/main/light.svg"&gt;
+  &lt;/picture&gt;
+  &lt;p align="center"&gt;
+    &lt;img
+      src="https://raw.githubusercontent.com/DRafi2006/DRafi2006/main/dist/github-jet.svg"
+      alt="Mach-6 Quantum Jet Heatmap"
+      width="100%"
+    /&gt;
+  &lt;/p&gt;
+&lt;/a&gt;
+
+&lt;p align="center"&gt;
+  &lt;a href="https://github.com/DRafi2006" target="_blank"&gt;
+    &lt;img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /&gt;
+  &lt;/a&gt;
+  &amp;nbsp;
+  &lt;a href="mailto:mahammaadrafi786@gmail.com"&gt;
+    &lt;img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email" /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal / Drawer for Customizer & Exporter -->
+  <div class="modal-backdrop" id="customizerModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span class="modal-icon">⚙️</span>
+          <span>Profile Studio &amp; ASCII Converter</span>
+        </div>
+        <button class="modal-close" id="closeCustomizerBtn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="customizer-tabs">
+          <button class="tab-btn active" data-tab="infoTab">1. Info Editor</button>
+          <button class="tab-btn" data-tab="asciiTab">2. Photo to ASCII</button>
+          <button class="tab-btn" data-tab="workflowTab">3. Setup Jet Automation</button>
+        </div>
+
+        <!-- Tab 1: Info Editor -->
+        <div class="tab-pane active" id="infoTab">
+          <p class="pane-help">Current active profile parameters across DevOS terminal cards.</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="inputSubject">Subject (Name)</label>
+              <input type="text" id="inputSubject" value="Dudekula Mahammad Rafi">
+            </div>
+            <div class="form-group">
+              <label for="inputRole">Role</label>
+              <input type="text" id="inputRole" value="Full-Stack &amp; AI Systems Architect">
+            </div>
+            <div class="form-group">
+              <label for="inputOrigin">Origin</label>
+              <input type="text" id="inputOrigin" value="Anantapur, AP / Hyderabad, India">
+            </div>
+            <div class="form-group">
+              <label for="inputEducation">Education</label>
+              <input type="text" id="inputEducation" value="B.Tech CSE (NIAT), SSC CGPA 10.0">
+            </div>
+            <div class="form-group">
+              <label for="inputStatus">Status</label>
+              <input type="text" id="inputStatus" value="Building • Innovating • Shipping">
+            </div>
+            <div class="form-group">
+              <label for="inputToolchain">Toolchain</label>
+              <input type="text" id="inputToolchain" value="VS Code, Git, Docker, Playwright">
+            </div>
+            <div class="form-group full-width">
+              <label for="inputCoreLang">Core Languages</label>
+              <input type="text" id="inputCoreLang" value="Python, JavaScript, TypeScript, C, C++, SQL">
+            </div>
+            <div class="form-group full-width">
+              <label for="inputCoreCloud">System Design &amp; AI</label>
+              <input type="text" id="inputCoreCloud" value="Whisper ASR, RAG, Gemma, Service Mesh, WebRTC, Docker">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" id="inputEmail" value="mahammaadrafi786@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="inputGithub">GitHub Handle</label>
+              <input type="text" id="inputGithub" value="DRafi2006">
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Photo to ASCII -->
+        <div class="tab-pane" id="asciiTab">
+          <p class="pane-help">Convert any portrait photo into high-resolution monospace ASCII art.</p>
+          <div class="ascii-upload-area" id="dropZone">
+            <input type="file" id="photoUpload" accept="image/*" style="display:none;">
+            <div class="drop-content">
+              <span class="upload-icon">📷</span>
+              <p>Drag &amp; drop a portrait photo here, or <button type="button" class="link-btn" id="browseFileBtn">browse file</button></p>
+              <span class="upload-hint">High contrast photos yield crisp terminal matrix art</span>
+            </div>
+          </div>
+          <canvas id="asciiCanvas" style="display:none;"></canvas>
+          <div class="ascii-preview-wrap">
+            <label>Live Monospace ASCII Output:</label>
+            <textarea id="asciiOutput" rows="12" class="ascii-textarea" spellcheck="false" placeholder="Your ASCII art will appear here..."></textarea>
+          </div>
+        </div>
+
+        <!-- Tab 3: GitHub Actions Setup Guide -->
+        <div class="tab-pane" id="workflowTab">
+          <p class="pane-help">Automate your Mach-6 Jet Heatmap with GitHub Actions in 3 simple steps:</p>
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <strong>Create Profile Repository:</strong>
+                <p>Create a public repository named <code>DRafi2006</code> under your GitHub account (<code>https://github.com/DRafi2006/DRafi2006</code>).</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <strong>Enable Action Write Permissions:</strong>
+                <p>In your repo: <code>Settings &rarr; Actions &rarr; General &rarr; Workflow permissions</code> &rarr; select <strong>Read and write permissions</strong>.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <strong>Push and Run Workflow:</strong>
+                <p>Push this folder to GitHub. The workflow in <code>.github/workflows/jet-heatmap.yml</code> runs daily at midnight UTC to keep your Jet Heatmap refreshed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="nav-btn" id="closeModalFooterBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span>Engineered with high-precision SVG animation, System Design topology, and DevOS aesthetics.</span>
+      <span class="footer-author">Dudekula Mahammad Rafi (<code>DRafi2006</code>)</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
