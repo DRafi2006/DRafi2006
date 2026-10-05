@@ -243,24 +243,6 @@ def generate_svg(svg_filename, tspans, is_dark=True):
   <g clip-path="url(#lc21)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="508" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Phone</tspan><tspan class="cc">: ...................... </tspan><tspan class="value">+91 8919474407</tspan></text></g>
   <g clip-path="url(#lc22)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="530" class="cc">. </tspan><tspan class="key">Live</tspan><tspan class="cc">.</tspan><tspan class="key">Radar</tspan><tspan class="cc">: ........... </tspan><tspan class="value">Patrolling Mach-6 contribution radar below ↓</tspan></text></g>
 
-  <!-- Cyber Telemetry Mini Badges -->
-  <g transform="translate(520, 555)">
-    <rect x="0" y="0" width="130" height="22" rx="4" fill="#0A1826" stroke="{header_color}" stroke-width="0.8" stroke-opacity="0.6"/>
-    <text x="65" y="14" text-anchor="middle" fill="{header_color}" font-family="'Fira Code', monospace" font-size="9" font-weight="bold">● GSoC '25 READY</text>
-  </g>
-  <g transform="translate(660, 555)">
-    <rect x="0" y="0" width="150" height="22" rx="4" fill="#0A1826" stroke="{accent_color}" stroke-width="0.8" stroke-opacity="0.6"/>
-    <text x="75" y="14" text-anchor="middle" fill="{accent_color}" font-family="'Fira Code', monospace" font-size="9" font-weight="bold">◈ AI / RAG ARCHITECT</text>
-  </g>
-  <g transform="translate(820, 555)">
-    <rect x="0" y="0" width="160" height="22" rx="4" fill="#0A1826" stroke="#38EF7D" stroke-width="0.8" stroke-opacity="0.6"/>
-    <text x="80" y="14" text-anchor="middle" fill="#38EF7D" font-family="'Fira Code', monospace" font-size="9" font-weight="bold">★ OPEN SOURCE DEV</text>
-  </g>
-  <g transform="translate(990, 555)">
-    <rect x="0" y="0" width="145" height="22" rx="4" fill="#0A1826" stroke="{scan_stroke}" stroke-width="0.8" stroke-opacity="0.6"/>
-    <text x="72.5" y="14" text-anchor="middle" fill="{text_color}" font-family="'Fira Code', monospace" font-size="8.5" font-weight="bold">⚡ 100% NOMINAL</text>
-  </g>
-
   <!-- Blinking Terminal Cursor -->
   <rect x="522" y="535.0" width="9" height="15" class="cursor-blink" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.01;0.02;0.3;0.5;0.7;0.85;1" dur="1.3s" begin="3.2s" repeatCount="indefinite"/>
