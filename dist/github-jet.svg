@@ -274,7 +274,7 @@
 <rect x="470.00" y="98.00" width="11" height="11" rx="2.5" fill="#0d3a2b"/>
 <rect x="470.00" y="112.00" width="11" height="11" rx="2.5" fill="#096e48"><animate attributeName="fill" dur="18s" repeatCount="indefinite" keyTimes="0;0.4661;0.4731;0.5339;0.5409;1" values="#096e48;#096e48;#00FF9D;#096e48;#00FF9D;#096e48"/></rect>
 <rect x="484.00" y="28.00" width="11" height="11" rx="2.5" fill="#0d3a2b"/>
-<rect x="484.00" y="42.00" width="11" height="11" rx="2.5" fill="#111927"/>
+<rect x="484.00" y="42.00" width="11" height="11" rx="2.5" fill="#0d3a2b"/>
 </g>
 <g id="bullets">
 <line x1="111.5" y1="142" x2="111.5" y2="75.5" stroke="#00F2FE" stroke-width="1.8" stroke-linecap="round" opacity="0"><animate attributeName="opacity" dur="18s" repeatCount="indefinite" keyTimes="0;0.084;0.1036;0.1106;1" values="0;1;1;0;0"/></line>
