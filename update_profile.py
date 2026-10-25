@@ -203,7 +203,7 @@ def generate_svg(svg_filename, tspans, is_dark=True):
   </g>
 
   <!-- Developer HUD Tag -->
-  <text x="24" y="58" class="hud-text">● DEV_ID: D. MAHAMMAD RAFI // CS @ NIAT</text>
+  <text x="24" y="58" class="hud-text">● DEV_ID: D. MAHAMMAD RAFI // CS @ NIAT (2028)</text>
 
   <!-- ASCII Art Content -->
   <text x="22" y="0" class="ascii">
@@ -224,7 +224,7 @@ def generate_svg(svg_filename, tspans, is_dark=True):
   <g clip-path="url(#lc2)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="88" class="accent">-- ABOUT ME ------------------------------------------------</tspan></text></g>
   <g clip-path="url(#lc3)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="110" class="key">Name      </tspan><tspan class="cc">: </tspan><tspan class="value">Dudekula Mahammad Rafi</tspan></text></g>
   <g clip-path="url(#lc4)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="132" class="key">Role      </tspan><tspan class="cc">: </tspan><tspan class="value">Full-Stack Developer &amp; AI Systems Architect</tspan></text></g>
-  <g clip-path="url(#lc5)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="154" class="key">Education </tspan><tspan class="cc">: </tspan><tspan class="value">B.Tech Computer Science &amp; Engineering (NIAT)</tspan></text></g>
+  <g clip-path="url(#lc5)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="154" class="key">Education </tspan><tspan class="cc">: </tspan><tspan class="value">B.Tech CSE (2024–2028) • NxtWave Inst of Adv Tech</tspan></text></g>
   <g clip-path="url(#lc6)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="176" class="key">Focus     </tspan><tspan class="cc">: </tspan><tspan class="value">Autonomous AI Agents • Distributed Systems</tspan></text></g>
   <g clip-path="url(#lc7)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="198" class="accent">-- TECHNICAL ARSENAL ---------------------------------------</tspan></text></g>
   <g clip-path="url(#lc8)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="220" class="key">Languages </tspan><tspan class="cc">: </tspan><tspan class="value">Python, TypeScript, JavaScript, C/C++, SQL</tspan></text></g>

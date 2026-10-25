@@ -1,7 +1,7 @@
 <div align="center">
 
 # 👋 Hi there, I'm Dudekula Mahammad Rafi
-### `Full-Stack Developer & AI Systems Architect` • `Open Source Contributor` • `CS @ NIAT`
+### `Full-Stack Developer & AI Systems Architect` • `Open Source Contributor` • `CS @ NIAT (2024–2028)`
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2400&pause=900&color=00FF9D&center=true&vCenter=true&width=680&lines=Building+Scalable+AI+%26+Distributed+Systems;Open+Source+Contributor+to+Layer5%2C+Meshery%2C+Rocket.Chat%2C+Jitsi;Architecting+Production+RAG+Pipelines+%26+Autonomous+Agents;Shipping+Modern+Full-Stack+Web+Applications)](https://github.com/DRafi2006)
 
@@ -21,7 +21,7 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 **Undergraduate**: Computer Science & Engineering at **NIAT** (National Institute of Advanced Technologies).
+- 🎓 **Education**: B.Tech in **Computer Science & Engineering (2024–2028)** at **NxtWave Institute of Advanced Technologies (NIAT)**.
 - 🌐 **Open Source Contributor**: Actively contributing to enterprise open source platforms including **Layer5**, **Meshery.io**, **Rocket.Chat**, and **Jitsi Meet**.
 - 🤖 **AI & Systems Architecture**: Designing production-grade RAG pipelines, autonomous AI agents, and local LLM integrations (**Whisper**, **Gemma**).
 - ⚡ **Engineering Core**: Building scalable full-stack applications with high concurrency, real-time WebSockets/WebRTC, and resilient microservices.
@@ -108,10 +108,6 @@
 &nbsp;
 <a href="mailto:mahammaadrafi786@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-&nbsp;
-<a href="https://drafi2006.github.io/DRafi2006/" target="_blank">
-  <img src="https://img.shields.io/badge/Interactive_Terminal-00FF9D?style=for-the-badge&logo=visualstudiocode&logoColor=black" alt="Portfolio Terminal" />
 </a>
 
 <br/><br/>
