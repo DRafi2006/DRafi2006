@@ -174,7 +174,7 @@ def generate_svg(svg_filename, tspans, is_dark=True):
 </g>
 
 <!-- Center Command Title (Unobstructed & perfectly centered) -->
-<text x="590" y="23" text-anchor="middle" class="term-title">rafik@devos ~ % ./quantum_core.sh --biometrics --sys-design --live</text>
+<text x="590" y="23" text-anchor="middle" class="term-title">rafi@workstation ~ % cat profile.json</text>
 
 <!-- Top Right Live Status & Animated Waveform -->
 <g transform="translate(1010, 12)">
@@ -182,12 +182,12 @@ def generate_svg(svg_filename, tspans, is_dark=True):
   <circle cx="10" cy="7.5" r="3" fill="#00FF9D">
     <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
   </circle>
-  <text x="18" y="10.5" fill="{header_color}" font-family="'Fira Code', monospace" font-size="8.5" font-weight="bold">AGENT CORE v3.2</text>
+  <text x="18" y="10.5" fill="{header_color}" font-family="'Fira Code', monospace" font-size="8.5" font-weight="bold">ACTIVE DEVELOPER</text>
 </g>
 
 <!-- Left ASCII Portrait Frame & Biometric HUD Overlays -->
 <g id="portrait-frame">
-  <!-- Biometric HUD Targeting Corner Brackets -->
+  <!-- HUD Targeting Corner Brackets -->
   <path d="M 16 60 L 16 48 L 28 48" fill="none" stroke="{hud_bracket}" stroke-width="1.8" opacity="0.8"/>
   <path d="M 488 48 L 500 48 L 500 60" fill="none" stroke="{hud_bracket}" stroke-width="1.8" opacity="0.8"/>
   <path d="M 16 575 L 16 587 L 28 587" fill="none" stroke="{hud_bracket}" stroke-width="1.8" opacity="0.8"/>
@@ -202,8 +202,8 @@ def generate_svg(svg_filename, tspans, is_dark=True):
     <circle cx="0" cy="0" r="2" fill="{accent_color}"/>
   </g>
 
-  <!-- Biometric HUD Tag -->
-  <text x="24" y="58" class="hud-text">● BIOMETRIC LOCK: [ MATCH 100% ] // ID: D. MAHAMMAD RAFI</text>
+  <!-- Developer HUD Tag -->
+  <text x="24" y="58" class="hud-text">● DEV_ID: D. MAHAMMAD RAFI // CS @ NIAT</text>
 
   <!-- ASCII Art Content -->
   <text x="22" y="0" class="ascii">
@@ -219,32 +219,32 @@ def generate_svg(svg_filename, tspans, is_dark=True):
 
 <!-- Right Telemetry Panel -->
 <g id="telemetry">
-  <g clip-path="url(#lc0)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="44" class="head">rafik@devos</tspan><tspan class="cc"> ------------------------------------------------</tspan></text></g>
-  <g clip-path="url(#lc1)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="68" class="cc">. </tspan><tspan class="key">Subject</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">Dudekula Mahammad Rafi</tspan></text></g>
-  <g clip-path="url(#lc2)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="90" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">Full-Stack &amp; AI Systems Architect</tspan></text></g>
-  <g clip-path="url(#lc3)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="112" class="cc">. </tspan><tspan class="key">Education</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">B.Tech CSE (NIAT), SSC CGPA 10.0</tspan></text></g>
-  <g clip-path="url(#lc4)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="134" class="cc">. </tspan><tspan class="key">Status</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Architecting • Innovating • Shipping</tspan></text></g>
-  <g clip-path="url(#lc5)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="156" class="cc">. </tspan></text></g>
-  <g clip-path="url(#lc6)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="178" class="accent">- System Design &amp; Arch</tspan><tspan class="cc"> ----------------------------------</tspan></text></g>
-  <g clip-path="url(#lc7)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="200" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">AI_RAG</tspan><tspan class="cc">: ........ </tspan><tspan class="value">Whisper ASR, Gemma LLMs, Dense/Sparse RAG</tspan></text></g>
-  <g clip-path="url(#lc8)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="222" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Distributed</tspan><tspan class="cc">: ... </tspan><tspan class="value">Microservices, WebSockets, WebRTC, Queues</tspan></text></g>
-  <g clip-path="url(#lc9)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="244" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">DataTier</tspan><tspan class="cc">: ...... </tspan><tspan class="value">PostgreSQL, SQLite, ChromaDB, Vector DBs</tspan></text></g>
-  <g clip-path="url(#lc10)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="266" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Languages</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Python, JavaScript, TypeScript, C, C++, SQL</tspan></text></g>
-  <g clip-path="url(#lc11)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="288" class="cc">. </tspan></text></g>
-  <g clip-path="url(#lc12)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="310" class="accent">- Open Source Ecosystem</tspan><tspan class="cc"> ---------------------------------</tspan></text></g>
-  <g clip-path="url(#lc13)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="332" class="cc">. </tspan><tspan class="key">Cloud</tspan><tspan class="cc">.</tspan><tspan class="key">Native</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Layer5 &amp; Meshery.io (Service Mesh Plane)</tspan></text></g>
-  <g clip-path="url(#lc14)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="354" class="cc">. </tspan><tspan class="key">RealTime</tspan><tspan class="cc">.</tspan><tspan class="key">Comms</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Rocket.Chat (Secure Enterprise CommsOS)</tspan></text></g>
-  <g clip-path="url(#lc15)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="376" class="cc">. </tspan><tspan class="key">WebRTC</tspan><tspan class="cc">.</tspan><tspan class="key">Media</tspan><tspan class="cc">: ........ </tspan><tspan class="value">Jitsi Meet (Scalable Video Conferences)</tspan></text></g>
-  <g clip-path="url(#lc16)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="398" class="cc">. </tspan><tspan class="key">GSoC</tspan><tspan class="cc">.</tspan><tspan class="key">Community</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Open Source Contributor &amp; Explorer</tspan></text></g>
-  <g clip-path="url(#lc17)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="420" class="cc">. </tspan></text></g>
-  <g clip-path="url(#lc18)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="442" class="accent">- Communication Grid</tspan><tspan class="cc"> ------------------------------------</tspan></text></g>
-  <g clip-path="url(#lc19)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="464" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Mail</tspan><tspan class="cc">: ....................... </tspan><tspan class="value">mahammaadrafi786@gmail.com</tspan></text></g>
-  <g clip-path="url(#lc20)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="486" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Github</tspan><tspan class="cc">: ..................... </tspan><tspan class="value">DRafi2006 (16+ Repositories)</tspan></text></g>
-  <g clip-path="url(#lc21)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="508" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Phone</tspan><tspan class="cc">: ...................... </tspan><tspan class="value">+91 8919474407</tspan></text></g>
-  <g clip-path="url(#lc22)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="530" class="cc">. </tspan><tspan class="key">Live</tspan><tspan class="cc">.</tspan><tspan class="key">Radar</tspan><tspan class="cc">: ........... </tspan><tspan class="value">Patrolling Mach-6 contribution radar below ↓</tspan></text></g>
+  <g clip-path="url(#lc0)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="44" class="head">rafi@workstation</tspan><tspan class="cc">:~$ </tspan><tspan class="value">cat profile.json</tspan></text></g>
+  <g clip-path="url(#lc1)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="66" class="cc">────────────────────────────────────────────────────────────</tspan></text></g>
+  <g clip-path="url(#lc2)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="88" class="accent">-- ABOUT ME ------------------------------------------------</tspan></text></g>
+  <g clip-path="url(#lc3)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="110" class="key">Name      </tspan><tspan class="cc">: </tspan><tspan class="value">Dudekula Mahammad Rafi</tspan></text></g>
+  <g clip-path="url(#lc4)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="132" class="key">Role      </tspan><tspan class="cc">: </tspan><tspan class="value">Full-Stack Developer &amp; AI Systems Architect</tspan></text></g>
+  <g clip-path="url(#lc5)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="154" class="key">Education </tspan><tspan class="cc">: </tspan><tspan class="value">B.Tech Computer Science &amp; Engineering (NIAT)</tspan></text></g>
+  <g clip-path="url(#lc6)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="176" class="key">Focus     </tspan><tspan class="cc">: </tspan><tspan class="value">Autonomous AI Agents • Distributed Systems</tspan></text></g>
+  <g clip-path="url(#lc7)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="198" class="accent">-- TECHNICAL ARSENAL ---------------------------------------</tspan></text></g>
+  <g clip-path="url(#lc8)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="220" class="key">Languages </tspan><tspan class="cc">: </tspan><tspan class="value">Python, TypeScript, JavaScript, C/C++, SQL</tspan></text></g>
+  <g clip-path="url(#lc9)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="242" class="key">AI &amp; ML   </tspan><tspan class="cc">: </tspan><tspan class="value">Whisper ASR, Gemma LLMs, RAG Pipelines, ChromaDB</tspan></text></g>
+  <g clip-path="url(#lc10)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="264" class="key">Full-Stack</tspan><tspan class="cc">: </tspan><tspan class="value">Next.js 14, React 18, Node.js, Express, Flask</tspan></text></g>
+  <g clip-path="url(#lc11)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="286" class="key">Real-Time </tspan><tspan class="cc">: </tspan><tspan class="value">WebSockets, WebRTC, Microservices, Docker</tspan></text></g>
+  <g clip-path="url(#lc12)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="308" class="key">Databases </tspan><tspan class="cc">: </tspan><tspan class="value">PostgreSQL, SQLite, MongoDB, Vector DBs</tspan></text></g>
+  <g clip-path="url(#lc13)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="330" class="accent">-- OPEN SOURCE CONTRIBUTIONS -------------------------------</tspan></text></g>
+  <g clip-path="url(#lc14)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="352" class="key">Layer5    </tspan><tspan class="cc">: </tspan><tspan class="value">Cloud-native service mesh management plane</tspan></text></g>
+  <g clip-path="url(#lc15)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="374" class="key">Meshery   </tspan><tspan class="cc">: </tspan><tspan class="value">Collaborative cloud native design &amp; mesh</tspan></text></g>
+  <g clip-path="url(#lc16)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="396" class="key">RocketChat</tspan><tspan class="cc">: </tspan><tspan class="value">Enterprise communications &amp; real-time messaging</tspan></text></g>
+  <g clip-path="url(#lc17)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="418" class="key">Jitsi Meet</tspan><tspan class="cc">: </tspan><tspan class="value">Scalable WebRTC video conferencing &amp; SFU</tspan></text></g>
+  <g clip-path="url(#lc18)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="440" class="accent">-- CONNECT &amp; STATUS ----------------------------------------</tspan></text></g>
+  <g clip-path="url(#lc19)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="462" class="key">Email     </tspan><tspan class="cc">: </tspan><tspan class="value">mahammaadrafi786@gmail.com</tspan></text></g>
+  <g clip-path="url(#lc20)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="484" class="key">GitHub    </tspan><tspan class="cc">: </tspan><tspan class="value">github.com/DRafi2006</tspan></text></g>
+  <g clip-path="url(#lc21)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="506" class="key">Status    </tspan><tspan class="cc">: </tspan><tspan class="value">Building &amp; Innovating • Open to Opportunities</tspan></text></g>
+  <g clip-path="url(#lc22)"><text x="520" y="0" fill="{text_color}"><tspan x="520" y="528" class="head">rafi@workstation</tspan><tspan class="cc">:~$ </tspan><tspan class="value">./view_activity_radar.sh</tspan></text></g>
 
   <!-- Blinking Terminal Cursor -->
-  <rect x="522" y="535.0" width="9" height="15" class="cursor-blink" opacity="0">
+  <rect x="765" y="515.0" width="9" height="15" class="cursor-blink" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.01;0.02;0.3;0.5;0.7;0.85;1" dur="1.3s" begin="3.2s" repeatCount="indefinite"/>
   </rect>
 </g>
